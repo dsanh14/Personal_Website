@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tomato</title>
+    <link rel="stylesheet" href="style.css">
+    <script defer src="script.js"></script>
+</head>
+<body>
+
+    <!-- Navigation -->
+    <nav id="desktop-nav">
+        <div class="logo">Tomato</div>
+        <div>
+            <ul class="nav-links">
+                <li><a href="#about">About</a></li>
+                <li><a href="#skills">Skills</a></li>
+                <li><a href="#organizations">Organizations</a></li>
+                <li><a href="#projects">Projects</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <!-- Mobile Nav -->
+    <nav id="hamburger-nav">
+        <div class="logo">Tomato</div>
+        <div class="hamburger-menu">
+            <div class="hamburger-icon" onclick="toggleMenu()">
+                <span></span><span></span><span></span>
+            </div>
+            <div class="menu-links">
+                <li><a href="#about" onclick="toggleMenu()">About</a></li>
+                <li><a href="#skills" onclick="toggleMenu()">Skills</a></li>
+                <li><a href="#organizations" onclick="toggleMenu()">Organizations</a></li>
+                <li><a href="#projects" onclick="toggleMenu()">Projects</a></li>
+                <li><a href="#contact" onclick="toggleMenu()">Contact</a></li>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section id="profile">
+        <div class="section__pic-container">
+            <img src="assets/tomato-profile.png" alt="Profile Picture">
+        </div>
+        <div class="section__text">
+            <p class="section__text__p1">Hello, I'm</p>
+            <h1 class="title">Tomato</h1>
+            <p class="section__text__p2">Aspiring Developer & Innovator</p>
+            <div class="btn-container">
+                <button class="btn btn-color-2" onclick="window.open('assets/tomato_resume.pdf')">Download CV</button>
+                <button class="btn btn-color-1" onclick="location.href='#contact'">Contact Me</button>
+            </div>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about">
+        <p class="section__text__p1">Get to Know More</p>
+        <h1 class="title">About Me</h1>
+        <div class="text-container">
+            <p>I'm Tomato, a passionate developer focused on building impactful projects. I specialize in full-stack development, data science, and AI research. I'm always exploring innovative technologies and working on new projects that challenge me.</p>
+        </div>
+    </section>
+
+    <!-- Skills Section -->
+    <section id="skills">
+        <p class="section__text__p1">Explore My</p>
+        <h1 class="title">Skills</h1>
+        <div class="skills-container">
+            <div class="skill-box">
+                <h3>Python</h3>
+                <p>Advanced</p>
+            </div>
+            <div class="skill-box">
+                <h3>JavaScript</h3>
+                <p>Intermediate</p>
+            </div>
+            <div class="skill-box">
+                <h3>Machine Learning</h3>
+                <p>Intermediate</p>
+            </div>
+            <div class="skill-box">
+                <h3>React & Node.js</h3>
+                <p>Basic</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Organizations Section -->
+    <section id="organizations">
+        <p class="section__text__p1">Take A Look At My</p>
+        <h1 class="title">Organizations</h1>
+        <div class="organizations-container">
+            <div class="org-box">
+                <h2>Tech for Good</h2>
+                <p>Building software for non-profits</p>
+            </div>
+            <div class="org-box">
+                <h2>Data Science Club</h2>
+                <p>Exploring AI and data-driven solutions</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Projects Section -->
+    <section id="projects">
+        <p class="section__text__p1">Browse My Recent</p>
+        <h1 class="title">Projects</h1>
+        <div class="projects-container">
+            <div class="project-box">
+                <h2>Finance Tracker</h2>
+                <p>A tool for managing personal expenses.</p>
+                <a href="https://github.com/tomato/finance-tracker">GitHub</a>
+            </div>
+            <div class="project-box">
+                <h2>AI Chatbot</h2>
+                <p>Built an NLP chatbot with OpenAI API.</p>
+                <a href="https://github.com/tomato/ai-chatbot">GitHub</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact">
+        <p class="section__text__p1">Get In Touch</p>
+        <h1 class="title">Contact Me</h1>
+        <p>Email: <a href="mailto:tomato@example.com">tomato@example.com</a></p>
+    </section>
+
+    <footer>
+        <p>© 2025 Tomato. All Rights Reserved.</p>
+    </footer>
+
+</body>
+</html>
