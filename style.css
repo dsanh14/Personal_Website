@@ -1,0 +1,191 @@
+/* ===========================
+   Global Styles
+   =========================== */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Arial', sans-serif;
+}
+
+body {
+    background-color: #f5f5f5;
+    color: #333;
+    text-align: center;
+    padding: 40px;
+}
+
+/* ===========================
+   Navigation (Desktop & Mobile)
+   =========================== */
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 1000px;
+    margin: 0 auto;
+}
+
+.logo {
+    font-size: 24px;
+    font-weight: bold;
+}
+
+.nav-links {
+    list-style: none;
+    display: flex;
+}
+
+.nav-links li {
+    margin: 0 15px;
+}
+
+.nav-links a {
+    text-decoration: none;
+    color: #333;
+    font-size: 18px;
+}
+
+/* ===========================
+   Mobile Navigation (Hamburger Menu)
+   =========================== */
+#hamburger-nav {
+    display: none;
+    flex-direction: column;
+    align-items: center;
+}
+
+.hamburger-menu {
+    display: flex;
+    flex-direction: column;
+    cursor: pointer;
+}
+
+.hamburger-icon span {
+    width: 30px;
+    height: 3px;
+    background-color: #333;
+    margin: 5px;
+}
+
+.menu-links {
+    display: none;
+    list-style: none;
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+}
+
+.menu-links.active {
+    display: flex;
+}
+
+/* ===========================
+   Hero Section
+   =========================== */
+#profile {
+    margin-top: 50px;
+}
+
+.section__pic-container img {
+    width: 150px;
+    border-radius: 50%;
+}
+
+.title {
+    font-size: 40px;
+    margin: 20px 0;
+}
+
+.btn-container {
+    margin: 20px 0;
+}
+
+.btn {
+    padding: 10px 20px;
+    border: none;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+.btn-color-1 {
+    background-color: #333;
+    color: white;
+}
+
+.btn-color-2 {
+    background-color: white;
+    border: 2px solid #333;
+}
+
+/* ===========================
+   Skills Section
+   =========================== */
+#skills {
+    margin-top: 50px;
+}
+
+.skills-container {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    flex-wrap: wrap;
+}
+
+.skill-box {
+    background: #fff;
+    padding: 15px;
+    border-radius: 8px;
+    box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.1);
+}
+
+/* ===========================
+   Projects Section
+   =========================== */
+.projects-container {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    flex-wrap: wrap;
+}
+
+.project-box {
+    background: #fff;
+    padding: 15px;
+    border-radius: 8px;
+    box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.1);
+}
+
+/* ===========================
+   Contact Section
+   =========================== */
+#contact {
+    margin-top: 50px;
+}
+
+#contact a {
+    text-decoration: none;
+    color: #333;
+}
+
+/* ===========================
+   Footer
+   =========================== */
+footer {
+    margin-top: 50px;
+    padding: 10px;
+    background: #333;
+    color: white;
+}
+
+/* ===========================
+   Mobile Styles
+   =========================== */
+@media screen and (max-width: 700px) {
+    #desktop-nav {
+        display: none;
+    }
+    #hamburger-nav {
+        display: flex;
+    }
+}
