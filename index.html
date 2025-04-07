@@ -10,41 +10,20 @@
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
 </head>
 <body>
-    <nav id="desktop-nav">
-        <div class="logo">Your Name</div>
-        <div>
-            <ul class="nav-links">
-                <li><a href="#about">About</a></li>
-                <li><a href="#experience">Skills & Awards</a></li>
-                <li><a href="#organizations">Organizations</a></li>
-                <li><a href="#projects">Projects</a></li>
-                <li><a href="#contact">Contact</a></li>
-            </ul>
-        </div>
+    <nav>
+        <a href="#" class="logo">Your Name</a>
+        <ul class="nav-links">
+            <li><a href="#about">About</a></li>
+            <li><a href="#experience">Skills & Awards</a></li>
+            <li><a href="#organizations">Organizations</a></li>
+            <li><a href="#projects">Projects</a></li>
+            <li><a href="#contact">Contact</a></li>
+        </ul>
     </nav>
-    <nav id="hamburger-nav">
-        <div class="logo">Your Name</div>
-        <div class="hamburger-menu">
-            <div class="hamburger-icon" onclick="toggleMenu()">
-                <span></span>
-                <span></span>
-                <span></span>
-            </div>
-            <div class="menu-links">
-                <li><a href="#about" onclick="toggleMenu()">About</a></li>
-                <li><a href="#experience" onclick="toggleMenu()">Skills & Awards</a></li>
-                <li><a href="#organizations" onclick="toggleMenu()">Organizations</a></li>
-                <li><a href="#projects" onclick="toggleMenu()">Projects</a></li>
-                <li><a href="#contact" onclick="toggleMenu()">Contact</a></li>
-            </div>
-        </div>
-    </nav>
+
     <section id="profile">
-        <div class="section__pic-container">
-            <img src="./Assets/profile-pic.png" alt="Your Name Profile Picture">
-        </div>
         <div class="section__text">
-            <p class="section__text__p1">Hello, I'm</p>
+            <p class="section__text__p1">Hey! I'm</p>
             <h1 class="title">Your Name</h1>
             <p class="section__text__p2">Your Current Position</p>
             <div class="btn-container">
@@ -56,129 +35,110 @@
                 </button>
             </div>
             <div id="socials-container">
-                <img src="./Assets/linkedin.png" alt="My LinkedIn Profile"
-                class="icon" onClick="location.href='https://linkedin.com/in/your-profile/'">
-                <img src="./Assets/github.png" alt="My GitHub Profile"
-                class="icon" onClick="location.href='https://github.com/your-profile/'">
+                <a href="https://linkedin.com/in/your-profile" target="_blank">
+                    <img src="./Assets/linkedin.png" alt="LinkedIn" class="icon">
+                </a>
+                <a href="https://github.com/your-profile" target="_blank">
+                    <img src="./Assets/github.png" alt="GitHub" class="icon">
+                </a>
+                <a href="https://tiktok.com/@your-profile" target="_blank">
+                    <img src="./Assets/tiktok.png" alt="TikTok" class="icon">
+                </a>
             </div>
         </div>
     </section>
+
     <section id="about">
-        <p class="section__text__p1">Get To Know More</p>
-        <h1 class="title">About Me</h1>
-        <div class="text-container">
-            <p>I'm [Your Name], a [Your Major] student at [Your University]. My experiences include [Your Key Experiences]. I have worked on projects in [Your Areas of Expertise], leveraging my expertise in [Your Skills]. I'm currently looking for opportunities to expand my skill set and gain hands-on experience in [Your Field of Interest].</p>
-            <p>Within all I do, I seek to epitomize [Your Core Values]. As [Your Role] at [Your Organization], I [Your Impact]. I am unwavering in my commitment to continue being a [Your Mission Statement].</p>
+        <div class="about-header">
+            <p class="section__text__p1">Get To Know More</p>
+            <h1 class="title">About Me</h1>
+        </div>
+        <div class="about-cards">
+            <div class="about-card">
+                <img src="./Assets/experience.png" alt="Experience" class="about-card-icon">
+                <h3>Recent Experience</h3>
+                <p>Your Position<br><strong>Company Name</strong></p>
+            </div>
+            <div class="about-card">
+                <img src="./Assets/education.png" alt="Education" class="about-card-icon">
+                <h3>Education</h3>
+                <p>Your Major<br><strong>Your University - Year</strong><br>GPA</p>
+            </div>
+        </div>
+        <div class="about-text">
+            <p>Your detailed introduction goes here. Talk about your background, interests, and goals. Mention your key experiences and what you're currently working on. If you're looking for specific opportunities, mention them here.</p>
+            <p>In the second paragraph, talk about your values and impact. Mention any organizations you've founded or been part of, and describe your mission statement.</p>
         </div>
     </section>
+
     <section id="experience">
         <p class="section__text__p1">Explore My</p>
         <h1 class="title">Skills & Awards</h1>
-        <div class="experience-details-container">
-            <div class="about-containers">
-                <div class="details-container">
-                    <h2 class="experience-sub-title">Skills</h2>
-                    <div class="article-container">
-                        <article>
-                            <h3>Python</h3>
-                            <p>Experienced</p>
-                        </article>
-                        <article>
-                            <h3>JavaScript</h3>
-                            <p>Experienced</p>
-                        </article>
-                        <article>
-                            <h3>React.js</h3>
-                            <p>Experienced</p>
-                        </article>
-                        <article>
-                            <h3>Node.js</h3>
-                            <p>Experienced</p>
-                        </article>
-                        <article>
-                            <h3>Machine Learning</h3>
-                            <p>Intermediate</p>
-                        </article>
-                        <article>
-                            <h3>Data Analytics</h3>
-                            <p>Intermediate</p>
-                        </article>
-                    </div>
-                </div>
-                <div class="details-container">
-                    <h2 class="experience-sub-title">Awards</h2>
-                    <div class="article-container">
-                        <article>
-                            <h3>Award Name 1</h3>
-                            <p>Organization Name</p>
-                        </article>
-                        <article>
-                            <h3>Award Name 2</h3>
-                            <p>Organization Name</p>
-                        </article>
-                        <article>
-                            <h3>Award Name 3</h3>
-                            <p>Organization Name</p>
-                        </article>
-                    </div>
+        <div class="skills-grid">
+            <div class="skill-card">
+                <img src="./Assets/html.png" alt="HTML" class="skill-icon">
+                <div>
+                    <h3>HTML</h3>
+                    <p>Experienced</p>
                 </div>
             </div>
-        </div>
-    </section>
-    <section id="organizations">
-        <p class="section__text__p1">Take A Look At My</p>
-        <h1 class="title">Organizations</h1>
-        <div class="experience-details-container">
-            <div class="about-containers">
-                <div class="details-container">
-                    <h2 class="experience-sub-title">Organization 1</h2>
-                    <div class="text-container">
-                        <p>Description of your role and impact in Organization 1.</p>
-                    </div>
-                </div>
-                <div class="details-container">
-                    <h2 class="experience-sub-title">Organization 2</h2>
-                    <div class="text-container">
-                        <p>Description of your role and impact in Organization 2.</p>
-                    </div>
+            <div class="skill-card">
+                <img src="./Assets/python.png" alt="Python" class="skill-icon">
+                <div>
+                    <h3>Python</h3>
+                    <p>Experienced</p>
                 </div>
             </div>
+            <div class="skill-card">
+                <img src="./Assets/js.png" alt="JavaScript" class="skill-icon">
+                <div>
+                    <h3>JavaScript</h3>
+                    <p>Experienced</p>
+                </div>
+            </div>
+            <!-- Add more skills as needed -->
+        </div>
+        <div class="awards-grid">
+            <div class="award-card">
+                <img src="./Assets/trophy.png" alt="Award" class="award-icon">
+                <h3>Award Name</h3>
+                <p>Organization Name</p>
+            </div>
+            <!-- Add more awards as needed -->
         </div>
     </section>
+
     <section id="projects">
         <p class="section__text__p1">Browse My Recent</p>
         <h1 class="title">Projects</h1>
-        <div class="experience-details-container">
-            <div class="about-containers">
-                <div class="details-container">
-                    <h2 class="experience-sub-title">Project 1</h2>
-                    <div class="text-container">
-                        <p>Description of Project 1 and its impact.</p>
-                    </div>
-                </div>
-                <div class="details-container">
-                    <h2 class="experience-sub-title">Project 2</h2>
-                    <div class="text-container">
-                        <p>Description of Project 2 and its impact.</p>
-                    </div>
+        <div class="projects-grid">
+            <div class="project-card">
+                <img src="./Assets/project1.png" alt="Project 1" class="project-image">
+                <div class="project-content">
+                    <h3 class="project-title">Project Name</h3>
+                    <p class="project-description">Brief description of the project and its impact.</p>
+                    <a href="https://github.com/your-profile/project" class="github-btn" target="_blank">Github</a>
                 </div>
             </div>
+            <!-- Add more projects as needed -->
         </div>
     </section>
+
     <section id="contact">
         <p class="section__text__p1">Get In Touch</p>
         <h1 class="title">Contact Me</h1>
-        <div class="contact-info-upper-container">
-            <div class="contact-info-container">
-                <img src="./Assets/email.png" alt="Email Icon" class="icon contact-icon email-icon" />
-                <p><a href="mailto:your.email@example.com">your.email@example.com</a></p>
-            </div>
-            <div class="contact-info-container">
-                <img src="./Assets/linkedin.png" alt="LinkedIn Icon" class="icon contact-icon" />
-                <p><a href="https://www.linkedin.com/in/your-profile/">LinkedIn</a></p>
-            </div>
+        <div class="contact-container">
+            <a href="mailto:your.email@example.com" class="contact-link">
+                <img src="./Assets/email.png" alt="Email" class="contact-icon">
+                your.email@example.com
+            </a>
+            <a href="https://linkedin.com/in/your-profile" class="contact-link" target="_blank">
+                <img src="./Assets/linkedin.png" alt="LinkedIn" class="contact-icon">
+                LinkedIn
+            </a>
         </div>
     </section>
+
     <footer>
         <nav>
             <ul class="nav-links">
@@ -189,8 +149,9 @@
                 <li><a href="#contact">Contact</a></li>
             </ul>
         </nav>
-        <p>Copyright &#169; 2024 Your Name. All Rights Reserved.</p>
+        <p>Copyright © 2024 Your Name. All Rights Reserved.</p>
     </footer>
+
     <script src="script.js"></script>
 </body>
 </html>
