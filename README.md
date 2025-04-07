@@ -21,4 +21,7 @@ Personal_Website/
 - LinkedIn: [Diego Sanchez](https://www.linkedin.com/in/dsanh14)
 - GitHub: [dsanh14](https://github.com/dsanh14)
 
+## 📄 License
+
+All rights reserved © 2024 Diego Sanchez
 © 2024 Diego Sanchez
