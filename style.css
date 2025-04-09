@@ -10,20 +10,21 @@
 
 :root {
     --primary-color: #000000;
-    --secondary-color: #555555;
-    --text-color: #333333;
+    --secondary-color: #333333;
+    --text-color: #1a1a1a;
     --light-text: #666666;
     --background: #ffffff;
-    --section-bg: #f8f9fa;
-    --card-shadow: 0 4px 20px rgba(0, 0, 0, 0.05);
+    --section-bg: #fafafa;
+    --card-shadow: 0 2px 4px rgba(0, 0, 0, 0.05);
     --card-bg: #ffffff;
-    --border-radius: 12px;
+    --border-radius: 8px;
 }
 
 body {
     background-color: var(--background);
     color: var(--text-color);
     line-height: 1.6;
+    font-size: 16px;
 }
 
 /* ===========================
@@ -39,7 +40,6 @@ nav {
     align-items: center;
     padding: 1.5rem 5%;
     background-color: var(--background);
-    box-shadow: var(--card-shadow);
     z-index: 1000;
 }
 
@@ -54,21 +54,22 @@ nav {
 }
 
 .logo {
-    font-size: 1.5rem;
-    font-weight: 700;
+    font-size: 1.25rem;
+    font-weight: 600;
     color: var(--primary-color);
 }
 
 .nav-links {
     list-style: none;
     display: flex;
-    gap: 2.5rem;
+    gap: 2rem;
 }
 
 .nav-links a {
     text-decoration: none;
     color: var(--text-color);
     font-weight: 500;
+    font-size: 0.95rem;
     transition: color 0.3s ease;
 }
 
@@ -86,15 +87,14 @@ nav {
     justify-content: center;
     padding: 8rem 5% 5rem;
     gap: 4rem;
-    margin-top: 2rem;
+    margin-top: 0;
 }
 
 .section__pic-container img {
-    width: 300px;
-    height: 300px;
+    width: 280px;
+    height: 280px;
     border-radius: 50%;
     object-fit: cover;
-    box-shadow: var(--card-shadow);
 }
 
 .section__text {
@@ -102,13 +102,13 @@ nav {
 }
 
 .section__text__p1 {
-    font-size: 1.25rem;
+    font-size: 1.1rem;
     color: var(--light-text);
     margin-bottom: 0.5rem;
 }
 
 .title {
-    font-size: 3.5rem;
+    font-size: 3rem;
     font-weight: 700;
     color: var(--primary-color);
     margin-bottom: 1rem;
@@ -116,7 +116,7 @@ nav {
 }
 
 .section__text__p2 {
-    font-size: 1.5rem;
+    font-size: 1.25rem;
     color: var(--light-text);
     margin-bottom: 2rem;
 }
@@ -127,14 +127,14 @@ nav {
 .section-container {
     display: flex;
     gap: 4rem;
-    max-width: 1200px;
+    max-width: 1000px;
     margin: 0 auto;
     padding: 2rem;
 }
 
 .about-pic {
-    width: 400px;
-    height: 400px;
+    width: 300px;
+    height: 300px;
     object-fit: cover;
     border-radius: var(--border-radius);
 }
@@ -145,14 +145,14 @@ nav {
 
 .about-containers {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-    gap: 2rem;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 1.5rem;
     margin-bottom: 2rem;
 }
 
 .details-container {
     background: var(--card-bg);
-    padding: 2rem;
+    padding: 1.5rem;
     border-radius: var(--border-radius);
     box-shadow: var(--card-shadow);
 }
@@ -161,14 +161,14 @@ nav {
    Skills & Awards Section
    =========================== */
 .experience-details-container {
-    max-width: 1200px;
+    max-width: 1000px;
     margin: 0 auto;
     padding: 2rem;
 }
 
 .article-container {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
     gap: 1.5rem;
 }
 
@@ -183,16 +183,16 @@ article {
 }
 
 article:hover {
-    transform: translateY(-5px);
+    transform: translateY(-3px);
 }
 
 article img.icon {
-    width: 24px;
-    height: 24px;
+    width: 20px;
+    height: 20px;
 }
 
 /* ===========================
-   Organizations & Projects Section
+   Projects Section
    =========================== */
 .proj-containers {
     display: grid;
@@ -206,6 +206,11 @@ article img.icon {
     border-radius: var(--border-radius);
     box-shadow: var(--card-shadow);
     overflow: hidden;
+    transition: transform 0.3s ease;
+}
+
+.color-container:hover {
+    transform: translateY(-5px);
 }
 
 .project-img, .orgs-img {
@@ -215,7 +220,7 @@ article img.icon {
 }
 
 .project-title {
-    font-size: 1.5rem;
+    font-size: 1.25rem;
     margin: 1rem 0;
     color: var(--primary-color);
 }
@@ -229,6 +234,7 @@ article img.icon {
     font-weight: 500;
     cursor: pointer;
     transition: all 0.3s ease;
+    font-size: 0.95rem;
 }
 
 .btn-color-1 {
@@ -239,7 +245,7 @@ article img.icon {
 
 .btn-color-2 {
     background: transparent;
-    border: 2px solid var(--primary-color);
+    border: 1px solid var(--primary-color);
     color: var(--primary-color);
 }
 
@@ -268,14 +274,14 @@ article img.icon {
     align-items: center;
     gap: 1rem;
     background: var(--card-bg);
-    padding: 1.5rem 2.5rem;
+    padding: 1.25rem 2rem;
     border-radius: var(--border-radius);
     box-shadow: var(--card-shadow);
     transition: transform 0.3s ease;
 }
 
 .contact-info-container:hover {
-    transform: translateY(-5px);
+    transform: translateY(-3px);
 }
 
 /* ===========================
@@ -283,20 +289,20 @@ article img.icon {
    =========================== */
 footer {
     background: var(--section-bg);
-    padding: 4rem 5%;
+    padding: 3rem 5%;
     text-align: center;
     margin-top: 4rem;
 }
 
 footer .nav-links {
     justify-content: center;
-    margin-bottom: 2rem;
-    gap: 3rem;
+    margin-bottom: 1.5rem;
+    gap: 2rem;
 }
 
 footer p {
     color: var(--light-text);
-    margin-top: 1.5rem;
+    font-size: 0.9rem;
 }
 
 /* ===========================
@@ -394,7 +400,19 @@ footer p {
     }
 
     #profile {
+        flex-direction: column;
+        text-align: center;
+        gap: 2rem;
         padding: 6rem 5% 3rem;
+    }
+
+    .section-container {
+        flex-direction: column;
+    }
+
+    .about-pic {
+        width: 100%;
+        height: 300px;
     }
 
     .contact-info-upper-container {
@@ -409,21 +427,10 @@ footer p {
     }
 
     .title {
-        font-size: 2.5rem;
+        font-size: 2.25rem;
     }
 
-    #profile {
-        flex-direction: column;
-        text-align: center;
-        gap: 2rem;
-    }
-
-    .section-container {
-        flex-direction: column;
-    }
-
-    .about-pic {
-        width: 100%;
-        height: 300px;
+    .nav-links {
+        gap: 1.5rem;
     }
 }
