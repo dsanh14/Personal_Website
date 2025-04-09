@@ -1,6 +1,6 @@
 'use client';
 
-import Link from 'next/link';
+import React from 'react';
 
 const Hero = () => {
   return (
@@ -10,18 +10,18 @@ const Hero = () => {
         <h1 className="text-5xl font-bold mb-4">Diego Sanchez</h1>
         <p className="text-xl text-gray-600 mb-8">Software Engineer</p>
         <div className="flex justify-center space-x-4 mb-8">
-          <Link
+          <a
             href="/resume.pdf"
             className="px-6 py-3 border border-black rounded-md text-black hover:bg-black hover:text-white transition-colors"
           >
             View Resume
-          </Link>
-          <Link
+          </a>
+          <a
             href="#contact"
             className="px-6 py-3 bg-black text-white rounded-md hover:bg-gray-800 transition-colors"
           >
             Contact Me
-          </Link>
+          </a>
         </div>
         <div className="flex justify-center space-x-4">
           <a
