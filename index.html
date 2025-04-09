@@ -3,6 +3,14 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Personal website of Your Name - Professional Portfolio">
+    <meta name="keywords" content="portfolio, web developer, software engineer, personal website">
+    <meta name="author" content="Your Name">
+    <meta property="og:title" content="Your Name - Personal Website">
+    <meta property="og:description" content="Professional portfolio showcasing skills, projects, and experience">
+    <meta property="og:image" content="./Assets/profile-pic.jpg">
+    <meta property="og:url" content="https://yourwebsite.com">
+    <link rel="icon" type="image/x-icon" href="./Assets/favicon.ico">
     <title>Your Name - Personal Website</title>
     <link rel="stylesheet" href="style.css" />
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -10,15 +18,15 @@
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
 </head>
 <body>
-    <nav id="desktop-nav">
-        <div class="logo">Your Name</div>
+    <nav id="desktop-nav" role="navigation" aria-label="Main navigation">
+        <div class="logo" role="banner">Your Name</div>
         <div>
-            <ul class="nav-links">
-                <li><a href="#about">About</a></li>
-                <li><a href="#experience">Skills & Awards</a></li>
-                <li><a href="#organizations">Organizations</a></li>
-                <li><a href="#projects">Projects</a></li>
-                <li><a href="#contact">Contact</a></li>
+            <ul class="nav-links" role="list">
+                <li role="listitem"><a href="#about" aria-label="About section">About</a></li>
+                <li role="listitem"><a href="#experience" aria-label="Skills and Awards section">Skills & Awards</a></li>
+                <li role="listitem"><a href="#organizations" aria-label="Organizations section">Organizations</a></li>
+                <li role="listitem"><a href="#projects" aria-label="Projects section">Projects</a></li>
+                <li role="listitem"><a href="#contact" aria-label="Contact section">Contact</a></li>
             </ul>
         </div>
     </nav>
@@ -39,167 +47,169 @@
             </div>
         </div>
     </nav>
-    <section id="profile">
-        <div class="section__pic-container">
-            <img src="./Assets/diego-profile.jpg" alt="Diego Sanchez Profile Picture">
-        </div>
-        <div class="section__text">
-            <p class="section__text__p1">Hey! I'm</p>
-            <h1 class="title">Your Name</h1>
-            <p class="section__text__p2">Your Current Position</p>
-            <div class="btn-container">
-                <button class="btn btn-color-2" onclick="window.open('./Assets/Resume.pdf')">
-                    Download CV
-                </button>
-                <button class="btn btn-color-1" onclick="location.href='./#contact'">
-                    Contact Me
-                </button>
-            </div>
-            <div id="socials-container">
-                <img src="./Assets/linkedin.png" alt="My LinkedIn Profile"
-                class="icon" onClick="location.href='https://www.linkedin.com/in/dsanh14'">
-                <img src="./Assets/github.png" alt="My GitHub Profile"
-                class="icon" onClick="location.href='https://github.com/dsanh14'">
-                <img src="./Assets/tiktok.png" alt="My TikTok Profile"
-                class="icon" onClick="location.href='https://tiktok.com/@your-profile/'">
-            </div>
-        </div>
-    </section>
-    <section id="about">
-        <p class="section__text__p1">Get To Know More</p>
-        <h1 class="title">About Me</h1>
-        <div class="section-container">
+    <main>
+        <section id="profile" aria-label="Profile section">
             <div class="section__pic-container">
-                <img src="./Assets/profile-pic.jpg" alt="Diego Sanchez Profile Picture" class="about-pic"/>
+                <img src="./Assets/diego-profile.jpg" alt="Diego Sanchez professional headshot" width="300" height="300">
             </div>
-            <div class="about-details-container">
+            <div class="section__text">
+                <p class="section__text__p1">Hey! I'm</p>
+                <h1 class="title">Your Name</h1>
+                <p class="section__text__p2">Your Current Position</p>
+                <div class="btn-container">
+                    <button class="btn btn-color-2" onclick="window.open('./Assets/Resume.pdf')">
+                        Download CV
+                    </button>
+                    <button class="btn btn-color-1" onclick="location.href='./#contact'">
+                        Contact Me
+                    </button>
+                </div>
+                <div id="socials-container">
+                    <img src="./Assets/linkedin.png" alt="My LinkedIn Profile"
+                    class="icon" onClick="location.href='https://www.linkedin.com/in/dsanh14'">
+                    <img src="./Assets/github.png" alt="My GitHub Profile"
+                    class="icon" onClick="location.href='https://github.com/dsanh14'">
+                    <img src="./Assets/tiktok.png" alt="My TikTok Profile"
+                    class="icon" onClick="location.href='https://tiktok.com/@your-profile/'">
+                </div>
+            </div>
+        </section>
+        <section id="about">
+            <p class="section__text__p1">Get To Know More</p>
+            <h1 class="title">About Me</h1>
+            <div class="section-container">
+                <div class="section__pic-container">
+                    <img src="./Assets/profile-pic.jpg" alt="Diego Sanchez Profile Picture" class="about-pic"/>
+                </div>
+                <div class="about-details-container">
+                    <div class="about-containers">
+                        <div class="details-container">
+                            <img src="./Assets/experience.png" alt="Experience Icon" class="icon"/>
+                            <h3>Recent Experience</h3>
+                            <p>Your Position<br/>Company Name</p>
+                        </div>
+                        <div class="details-container">
+                            <img src="./Assets/education.png" alt="Education Icon" class="icon"/>
+                            <h3>Education</h3>
+                            <p>Your Degree<br/>University - Graduation Year</p>
+                        </div>
+                    </div>
+                    <div class="text-container">
+                        <p>Write your bio here. Include your background, experiences, and aspirations. Mention your key achievements and what drives you. Talk about your current focus and future goals.</p>
+                    </div>
+                </div>
+            </div>
+            <img src="./Assets/arrow.png" alt="Arrow" class="icon arrow" onClick="location.href='./#experience'">
+        </section>
+        <section id="experience">
+            <p class="section__text__p1">Explore My</p>
+            <h1 class="title">Skills & Awards</h1>
+            <div class="experience-details-container">
                 <div class="about-containers">
                     <div class="details-container">
-                        <img src="./Assets/experience.png" alt="Experience Icon" class="icon"/>
-                        <h3>Recent Experience</h3>
-                        <p>Your Position<br/>Company Name</p>
+                        <h2 class="experience-sub-title">Skills</h2>
+                        <div class="article-container">
+                            <article>
+                                <img src="./Assets/checkmark.png" alt="Experience Icon" class="icon"/>
+                                <div>
+                                    <h3>HTML</h3>
+                                    <p>Experienced</p>
+                                </div>
+                            </article>
+                            <article>
+                                <img src="./Assets/checkmark.png" alt="Experience Icon" class="icon"/>
+                                <div>
+                                    <h3>CSS</h3>
+                                    <p>Intermediate</p>
+                                </div>
+                            </article>
+                            <article>
+                                <img src="./Assets/checkmark.png" alt="Experience Icon" class="icon"/>
+                                <div>
+                                    <h3>JavaScript</h3>
+                                    <p>Basic</p>
+                                </div>
+                            </article>
+                            <!-- Add more skills as needed -->
+                        </div>
                     </div>
                     <div class="details-container">
-                        <img src="./Assets/education.png" alt="Education Icon" class="icon"/>
-                        <h3>Education</h3>
-                        <p>Your Degree<br/>University - Graduation Year</p>
-                    </div>
-                </div>
-                <div class="text-container">
-                    <p>Write your bio here. Include your background, experiences, and aspirations. Mention your key achievements and what drives you. Talk about your current focus and future goals.</p>
-                </div>
-            </div>
-        </div>
-        <img src="./Assets/arrow.png" alt="Arrow" class="icon arrow" onClick="location.href='./#experience'">
-    </section>
-    <section id="experience">
-        <p class="section__text__p1">Explore My</p>
-        <h1 class="title">Skills & Awards</h1>
-        <div class="experience-details-container">
-            <div class="about-containers">
-                <div class="details-container">
-                    <h2 class="experience-sub-title">Skills</h2>
-                    <div class="article-container">
-                        <article>
-                            <img src="./Assets/checkmark.png" alt="Experience Icon" class="icon"/>
-                            <div>
-                                <h3>HTML</h3>
-                                <p>Experienced</p>
-                            </div>
-                        </article>
-                        <article>
-                            <img src="./Assets/checkmark.png" alt="Experience Icon" class="icon"/>
-                            <div>
-                                <h3>CSS</h3>
-                                <p>Intermediate</p>
-                            </div>
-                        </article>
-                        <article>
-                            <img src="./Assets/checkmark.png" alt="Experience Icon" class="icon"/>
-                            <div>
-                                <h3>JavaScript</h3>
-                                <p>Basic</p>
-                            </div>
-                        </article>
-                        <!-- Add more skills as needed -->
-                    </div>
-                </div>
-                <div class="details-container">
-                    <h2 class="experience-sub-title">Awards</h2>
-                    <div class="article-container">
-                        <article>
-                            <img src="./Assets/trophy.png" alt="Award Icon" class="icon"/>
-                            <div>
-                                <h3>Award Name</h3>
-                                <p>Organization</p>
-                            </div>
-                        </article>
-                        <!-- Add more awards as needed -->
+                        <h2 class="experience-sub-title">Awards</h2>
+                        <div class="article-container">
+                            <article>
+                                <img src="./Assets/trophy.png" alt="Award Icon" class="icon"/>
+                                <div>
+                                    <h3>Award Name</h3>
+                                    <p>Organization</p>
+                                </div>
+                            </article>
+                            <!-- Add more awards as needed -->
+                        </div>
                     </div>
                 </div>
             </div>
-        </div>
-        <img src="./Assets/arrow.png" alt="Arrow" class="icon arrow" onClick="location.href='./#organizations'">
-    </section>
-    <section id="organizations">
-        <p class="section__text__p1">Take A Look At My</p>
-        <h1 class="title">Organizations</h1>
-        <div class="experience-details-container">
-            <div class="proj-containers">
-                <div class="details-container color-container">
-                    <div class="article-container">
-                        <img src="./Assets/org1.png" alt="Organization 1" class="orgs-img"/>
+            <img src="./Assets/arrow.png" alt="Arrow" class="icon arrow" onClick="location.href='./#organizations'">
+        </section>
+        <section id="organizations">
+            <p class="section__text__p1">Take A Look At My</p>
+            <h1 class="title">Organizations</h1>
+            <div class="experience-details-container">
+                <div class="proj-containers">
+                    <div class="details-container color-container">
+                        <div class="article-container">
+                            <img src="./Assets/org1.png" alt="Organization 1" class="orgs-img"/>
+                        </div>
+                        <h2 class="experience-sub-title project-title">Organization Name</h2>
+                        <div class="btn-container">
+                            <button class="btn btn-color-2 project-btn" onClick="location.href='#'">
+                                Learn More
+                            </button>
+                        </div>
                     </div>
-                    <h2 class="experience-sub-title project-title">Organization Name</h2>
-                    <div class="btn-container">
-                        <button class="btn btn-color-2 project-btn" onClick="location.href='#'">
-                            Learn More
-                        </button>
-                    </div>
+                    <!-- Add more organizations as needed -->
                 </div>
-                <!-- Add more organizations as needed -->
             </div>
-        </div>
-        <img src="./Assets/arrow.png" alt="Arrow" class="icon arrow" onClick="location.href='./#projects'">
-    </section>
-    <section id="projects">
-        <p class="section__text__p1">Browse My Recent</p>
-        <h1 class="title">Projects</h1>
-        <div class="experience-details-container">
-            <div class="proj-containers">
-                <div class="details-container color-container">
-                    <div class="article-container">
-                        <img src="./Assets/project1.png" alt="Project 1" class="project-img"/>
+            <img src="./Assets/arrow.png" alt="Arrow" class="icon arrow" onClick="location.href='./#projects'">
+        </section>
+        <section id="projects">
+            <p class="section__text__p1">Browse My Recent</p>
+            <h1 class="title">Projects</h1>
+            <div class="experience-details-container">
+                <div class="proj-containers">
+                    <div class="details-container color-container">
+                        <div class="article-container">
+                            <img src="./Assets/project1.png" alt="Project 1" class="project-img"/>
+                        </div>
+                        <h2 class="experience-sub-title project-title">Project Name</h2>
+                        <p>Project description goes here. Explain what the project does and what technologies were used.</p>
+                        <div class="btn-container">
+                            <button class="btn btn-color-2 project-btn" onClick="location.href='#'">
+                                Github
+                            </button>
+                        </div>
                     </div>
-                    <h2 class="experience-sub-title project-title">Project Name</h2>
-                    <p>Project description goes here. Explain what the project does and what technologies were used.</p>
-                    <div class="btn-container">
-                        <button class="btn btn-color-2 project-btn" onClick="location.href='#'">
-                            Github
-                        </button>
-                    </div>
+                    <!-- Add more projects as needed -->
                 </div>
-                <!-- Add more projects as needed -->
             </div>
-        </div>
-        <img src="./Assets/arrow.png" alt="Arrow" class="icon arrow" onClick="location.href='./#contact'">
-    </section>
-    <section id="contact">
-        <p class="section__text__p1">Get In Touch</p>
-        <h1 class="title">Contact Me</h1>
-        <div class="contact-info-upper-container">
-            <div class="contact-info-container">
-                <img src="./Assets/email.png" alt="Email Icon" class="icon contact-icon"/>
-                <p><a href="mailto:your.email@example.com">your.email@example.com</a></p>
+            <img src="./Assets/arrow.png" alt="Arrow" class="icon arrow" onClick="location.href='./#contact'">
+        </section>
+        <section id="contact">
+            <p class="section__text__p1">Get In Touch</p>
+            <h1 class="title">Contact Me</h1>
+            <div class="contact-info-upper-container">
+                <div class="contact-info-container">
+                    <img src="./Assets/email.png" alt="Email Icon" class="icon contact-icon"/>
+                    <p><a href="mailto:your.email@example.com">your.email@example.com</a></p>
+                </div>
+                <div class="contact-info-container">
+                    <img src="./Assets/linkedin.png" alt="My LinkedIn Profile"
+                    class="icon" onClick="location.href='https://www.linkedin.com/in/dsanh14'">
+                    <p><a href="https://www.linkedin.com/in/dsanh14">LinkedIn</a></p>
+                </div>
             </div>
-            <div class="contact-info-container">
-                <img src="./Assets/linkedin.png" alt="My LinkedIn Profile"
-                class="icon" onClick="location.href='https://www.linkedin.com/in/dsanh14'">
-                <p><a href="https://www.linkedin.com/in/dsanh14">LinkedIn</a></p>
-            </div>
-        </div>
-    </section>
-    <footer>
+        </section>
+    </main>
+    <footer role="contentinfo">
         <nav>
             <div class="nav-links-container">
                 <ul class="nav-links">
