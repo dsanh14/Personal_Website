@@ -3,15 +3,15 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Personal website of Your Name - Professional Portfolio">
+    <meta name="description" content="Personal website of Diego Sanchez - Software Engineer">
     <meta name="keywords" content="portfolio, web developer, software engineer, personal website">
-    <meta name="author" content="Your Name">
-    <meta property="og:title" content="Your Name - Personal Website">
+    <meta name="author" content="Diego Sanchez">
+    <meta property="og:title" content="Diego Sanchez - Software Engineer">
     <meta property="og:description" content="Professional portfolio showcasing skills, projects, and experience">
     <meta property="og:image" content="./Assets/profile-pic.jpg">
     <meta property="og:url" content="https://yourwebsite.com">
     <link rel="icon" type="image/x-icon" href="./Assets/favicon.ico">
-    <title>Your Name - Personal Website</title>
+    <title>Diego Sanchez - Software Engineer</title>
     <link rel="stylesheet" href="style.css" />
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -19,19 +19,18 @@
 </head>
 <body>
     <nav id="desktop-nav" role="navigation" aria-label="Main navigation">
-        <div class="logo" role="banner">Your Name</div>
+        <div class="logo" role="banner">Diego Sanchez</div>
         <div>
             <ul class="nav-links" role="list">
                 <li role="listitem"><a href="#about" aria-label="About section">About</a></li>
-                <li role="listitem"><a href="#experience" aria-label="Skills and Awards section">Skills & Awards</a></li>
-                <li role="listitem"><a href="#organizations" aria-label="Organizations section">Organizations</a></li>
+                <li role="listitem"><a href="#experience" aria-label="Skills and Awards section">Experience</a></li>
                 <li role="listitem"><a href="#projects" aria-label="Projects section">Projects</a></li>
                 <li role="listitem"><a href="#contact" aria-label="Contact section">Contact</a></li>
             </ul>
         </div>
     </nav>
     <nav id="hamburger-nav">
-        <div class="logo">Your Name</div>
+        <div class="logo">Diego Sanchez</div>
         <div class="hamburger-menu">
             <div class="hamburger-icon" onclick="toggleMenu()">
                 <span></span>
@@ -40,8 +39,7 @@
             </div>
             <div class="menu-links">
                 <li><a href="#about" onclick="toggleMenu()">About</a></li>
-                <li><a href="#experience" onclick="toggleMenu()">Skills & Awards</a></li>
-                <li><a href="#organizations" onclick="toggleMenu()">Organizations</a></li>
+                <li><a href="#experience" onclick="toggleMenu()">Experience</a></li>
                 <li><a href="#projects" onclick="toggleMenu()">Projects</a></li>
                 <li><a href="#contact" onclick="toggleMenu()">Contact</a></li>
             </div>
@@ -49,16 +47,13 @@
     </nav>
     <main>
         <section id="profile" aria-label="Profile section">
-            <div class="section__pic-container">
-                <img src="./Assets/diego-profile.jpg" alt="Diego Sanchez professional headshot" width="300" height="300">
-            </div>
             <div class="section__text">
-                <p class="section__text__p1">Hey! I'm</p>
-                <h1 class="title">Your Name</h1>
-                <p class="section__text__p2">Your Current Position</p>
+                <p class="section__text__p1">Hi, I'm</p>
+                <h1 class="title">Diego Sanchez</h1>
+                <p class="section__text__p2">Software Engineer</p>
                 <div class="btn-container">
                     <button class="btn btn-color-2" onclick="window.open('./Assets/Resume.pdf')">
-                        Download CV
+                        View Resume
                     </button>
                     <button class="btn btn-color-1" onclick="location.href='./#contact'">
                         Contact Me
@@ -69,41 +64,35 @@
                     class="icon" onClick="location.href='https://www.linkedin.com/in/dsanh14'">
                     <img src="./Assets/github.png" alt="My GitHub Profile"
                     class="icon" onClick="location.href='https://github.com/dsanh14'">
-                    <img src="./Assets/tiktok.png" alt="My TikTok Profile"
-                    class="icon" onClick="location.href='https://tiktok.com/@your-profile/'">
                 </div>
             </div>
         </section>
         <section id="about">
-            <p class="section__text__p1">Get To Know More</p>
-            <h1 class="title">About Me</h1>
+            <p class="section__text__p1">About Me</p>
+            <h1 class="title">Background</h1>
             <div class="section-container">
-                <div class="section__pic-container">
-                    <img src="./Assets/profile-pic.jpg" alt="Diego Sanchez Profile Picture" class="about-pic"/>
-                </div>
                 <div class="about-details-container">
+                    <div class="text-container">
+                        <p>I'm a software engineer passionate about building scalable and efficient solutions. With a strong foundation in computer science and hands-on experience in full-stack development, I specialize in creating robust applications that solve real-world problems.</p>
+                    </div>
                     <div class="about-containers">
                         <div class="details-container">
                             <img src="./Assets/experience.png" alt="Experience Icon" class="icon"/>
-                            <h3>Recent Experience</h3>
-                            <p>Your Position<br/>Company Name</p>
+                            <h3>Experience</h3>
+                            <p>Software Engineer<br/>Current Company</p>
                         </div>
                         <div class="details-container">
                             <img src="./Assets/education.png" alt="Education Icon" class="icon"/>
                             <h3>Education</h3>
-                            <p>Your Degree<br/>University - Graduation Year</p>
+                            <p>B.S. Computer Science<br/>University - 2023</p>
                         </div>
-                    </div>
-                    <div class="text-container">
-                        <p>Write your bio here. Include your background, experiences, and aspirations. Mention your key achievements and what drives you. Talk about your current focus and future goals.</p>
                     </div>
                 </div>
             </div>
-            <img src="./Assets/arrow.png" alt="Arrow" class="icon arrow" onClick="location.href='./#experience'">
         </section>
         <section id="experience">
-            <p class="section__text__p1">Explore My</p>
-            <h1 class="title">Skills & Awards</h1>
+            <p class="section__text__p1">My</p>
+            <h1 class="title">Experience</h1>
             <div class="experience-details-container">
                 <div class="about-containers">
                     <div class="details-container">
@@ -112,67 +101,31 @@
                             <article>
                                 <img src="./Assets/checkmark.png" alt="Experience Icon" class="icon"/>
                                 <div>
-                                    <h3>HTML</h3>
-                                    <p>Experienced</p>
+                                    <h3>Frontend</h3>
+                                    <p>React, TypeScript, HTML/CSS</p>
                                 </div>
                             </article>
                             <article>
                                 <img src="./Assets/checkmark.png" alt="Experience Icon" class="icon"/>
                                 <div>
-                                    <h3>CSS</h3>
-                                    <p>Intermediate</p>
+                                    <h3>Backend</h3>
+                                    <p>Node.js, Python, SQL</p>
                                 </div>
                             </article>
                             <article>
                                 <img src="./Assets/checkmark.png" alt="Experience Icon" class="icon"/>
                                 <div>
-                                    <h3>JavaScript</h3>
-                                    <p>Basic</p>
+                                    <h3>Tools</h3>
+                                    <p>Git, Docker, AWS</p>
                                 </div>
                             </article>
-                            <!-- Add more skills as needed -->
-                        </div>
-                    </div>
-                    <div class="details-container">
-                        <h2 class="experience-sub-title">Awards</h2>
-                        <div class="article-container">
-                            <article>
-                                <img src="./Assets/trophy.png" alt="Award Icon" class="icon"/>
-                                <div>
-                                    <h3>Award Name</h3>
-                                    <p>Organization</p>
-                                </div>
-                            </article>
-                            <!-- Add more awards as needed -->
                         </div>
                     </div>
                 </div>
             </div>
-            <img src="./Assets/arrow.png" alt="Arrow" class="icon arrow" onClick="location.href='./#organizations'">
-        </section>
-        <section id="organizations">
-            <p class="section__text__p1">Take A Look At My</p>
-            <h1 class="title">Organizations</h1>
-            <div class="experience-details-container">
-                <div class="proj-containers">
-                    <div class="details-container color-container">
-                        <div class="article-container">
-                            <img src="./Assets/org1.png" alt="Organization 1" class="orgs-img"/>
-                        </div>
-                        <h2 class="experience-sub-title project-title">Organization Name</h2>
-                        <div class="btn-container">
-                            <button class="btn btn-color-2 project-btn" onClick="location.href='#'">
-                                Learn More
-                            </button>
-                        </div>
-                    </div>
-                    <!-- Add more organizations as needed -->
-                </div>
-            </div>
-            <img src="./Assets/arrow.png" alt="Arrow" class="icon arrow" onClick="location.href='./#projects'">
         </section>
         <section id="projects">
-            <p class="section__text__p1">Browse My Recent</p>
+            <p class="section__text__p1">My</p>
             <h1 class="title">Projects</h1>
             <div class="experience-details-container">
                 <div class="proj-containers">
@@ -181,17 +134,15 @@
                             <img src="./Assets/project1.png" alt="Project 1" class="project-img"/>
                         </div>
                         <h2 class="experience-sub-title project-title">Project Name</h2>
-                        <p>Project description goes here. Explain what the project does and what technologies were used.</p>
+                        <p>A brief description of the project and the technologies used. Highlight the key features and your role in the project.</p>
                         <div class="btn-container">
                             <button class="btn btn-color-2 project-btn" onClick="location.href='#'">
-                                Github
+                                View Project
                             </button>
                         </div>
                     </div>
-                    <!-- Add more projects as needed -->
                 </div>
             </div>
-            <img src="./Assets/arrow.png" alt="Arrow" class="icon arrow" onClick="location.href='./#contact'">
         </section>
         <section id="contact">
             <p class="section__text__p1">Get In Touch</p>
@@ -214,14 +165,13 @@
             <div class="nav-links-container">
                 <ul class="nav-links">
                     <li><a href="#about">About</a></li>
-                    <li><a href="#experience">Skills & Awards</a></li>
-                    <li><a href="#organizations">Organizations</a></li>
+                    <li><a href="#experience">Experience</a></li>
                     <li><a href="#projects">Projects</a></li>
                     <li><a href="#contact">Contact</a></li>
                 </ul>
             </div>
         </nav>
-        <p>Copyright &#169; 2024 Your Name. All Rights Reserved.</p>
+        <p>© 2024 Diego Sanchez. All rights reserved.</p>
     </footer>
     <script src="script.js"></script>
 </body>
